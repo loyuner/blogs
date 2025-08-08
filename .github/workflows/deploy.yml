@@ -20,26 +20,27 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          echo "📦 开始安装依赖..."
+          echo "📦 安装依赖..."
           npm install
-          echo "✅ 依赖安装完成！"
+          echo "✅ 安装完成"
 
+      # 👇 替换从这里开始
       - name: Build
         run: |
           echo "🚀 开始构建网站..."
-          npm run build
-          echo "✅ 构建完成！"
+          echo "当前路径：$(pwd)"
+          echo "查看 docs 文件夹是否存在："
+          ls -la docs || echo "❌ docs 文件夹不存在！"
 
-      - name: Check build output
-        run: |
-          echo "🔍 检查生成的文件..."
-          ls -la ./docs/.vuepress/dist
-          if [ -f ./docs/.vuepress/dist/index.html ]; then
-            echo "🎉 成功！找到了 index.html"
-          else
-            echo "❌ 失败！没有生成网页文件"
-            exit 1
-          fi
+          echo "查看 docs/.vuepress/config.js 是否存在："
+          ls -la docs/.vuepress/config.js || echo "❌ config.js 不存在！"
+
+          echo "运行 npm run build..."
+          npm run build --verbose
+
+          echo "查看构建输出目录："
+          ls -la ./docs/.vuepress/dist || echo "❌ 构建失败，没有生成 dist 文件夹！"
+      # 👆 到这里结束
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
