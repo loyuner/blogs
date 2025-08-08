@@ -3,50 +3,31 @@ name: Deploy VuePress to GitHub Pages
 on:
   push:
     branches:
-      - master   # 如果你的主分支是 master，请改为 'master'
+      - masteraster
 
 jobs:
   deploy:
-    name: Deploy
     runs-on: ubuntu-latest
-
     steps:
-      # 1. 检出代码
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          # 如果使用 submodules，取消下一行注释
-          # submodules: true
 
-      # 2. 设置 Node.js 环境（关键：使用 Node.js 18 兼容 VuePress）
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '18'    # VuePress 1.x 推荐使用 Node.js 16 或 18
-          cache: 'npm'          # 缓存 npm 依赖，加快安装速度
+          node-version: '18'
+          cache: 'npm'
 
-      # 3. 安装依赖
       - name: Install Dependencies
-        run: |
-          # 清理旧的 lock 文件（可选，避免兼容问题）
-          rm -f package-lock.json
-          npm install
+        run: npm install
 
-      # 4. 构建静态文件
       - name: Build
-        run: |
-          npm run build
+        run: npm run build
         env:
-          # 可选：设置构建环境变量
           NODE_OPTIONS: --openssl-legacy-provider
-          # 说明：Node.js 17+ 某些构建工具需要此变量（如 webpack 4）
 
-      # 5. 部署到 GitHub Pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # 构建输出目录，VuePress 默认为：
           publish_dir: ./docs/.vuepress/dist
-          # 可选：指定发布分支（默认是 gh-pages）
-          publish_branch: gh-pages
