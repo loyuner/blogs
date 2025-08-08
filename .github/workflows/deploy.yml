@@ -3,7 +3,7 @@ name: Deploy VuePress to GitHub Pages
 on:
   push:
     branches:
-      - masteraster
+      - master
 
 jobs:
   deploy:
