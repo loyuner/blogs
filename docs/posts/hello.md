@@ -18,7 +18,9 @@ summary: 这是我使用 VuePress 搭建博客的第一篇记录，分享搭建�
 ### node安装
 
 1. 先得下载node.js,按步骤下载就行，然后重点！
-![我的图片](/images/2.png)   
+
+  ![](https://loyuner.github.io/blogs/images/2.png)
+
 2. 进行环境变量配置
    找到安装的目录，在安装目录下新建两个文件夹【node_global】和【node_cache】
    创建完毕后，使用管理员身份打开cmd命令窗口，输入
@@ -151,4 +153,9 @@ summary: 这是我使用 VuePress 搭建博客的第一篇记录，分享搭建�
 
    8. npm run dev启动！！！！！
 
+      #### 传GitHub
+   
+      1. 在GitHub创建仓库
+      2. 
+   
    
