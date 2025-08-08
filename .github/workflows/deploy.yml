@@ -19,24 +19,28 @@ jobs:
           cache: 'npm'
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          echo "📦 开始安装依赖..."
+          npm install
+          echo "✅ 依赖安装完成！"
 
       - name: Build
-        run: npm run build
+        run: |
+          echo "🚀 开始构建网站..."
+          npm run build
+          echo "✅ 构建完成！"
 
-      # 👇 下面这三行是新加的！用来检查是否生成了网页
       - name: Check build output
         run: |
-          echo "🔍 正在检查网页文件..."
+          echo "🔍 检查生成的文件..."
           ls -la ./docs/.vuepress/dist
           if [ -f ./docs/.vuepress/dist/index.html ]; then
-            echo "✅ 成功！找到了 index.html"
+            echo "🎉 成功！找到了 index.html"
           else
-            echo "❌ 失败！没有找到 index.html，构建可能出错了"
+            echo "❌ 失败！没有生成网页文件"
             exit 1
           fi
 
-      # 👇 这是部署步骤，我们改得更清楚
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
