@@ -14,9 +14,6 @@ module.exports = {
     nav: [
       { text: '🏠 首页', link: '/' },
       { text: '📚 文章', link: '/blog/' },
-      { text: '🏷️ 分类', link: '/categories/' },
-      { text: '🔖 标签', link: '/tags/' },
-      { text: '📅 归档', link: '/archive/' },
       { text: 'GitHub', link: 'https://github.com/loyuner/blogs' },
     ],
 
@@ -27,7 +24,21 @@ module.exports = {
           title: '✨ 初始文章',
           children: [
             'hello.md',   // 对应 docs/blog/hello.md
-            'higuy.md'    // 对应 docs/blog/higuy.md
+            'higuy.md',   // 对应 docs/blog/higuy.md
+            'python打包.md'    // 对应 docs/blog/wp1.md
+          ]
+        },
+        {
+          title: '✨ 渗透相关',
+          children: [
+            '信息收集.md'   // 对应 docs/blog/hello.md
+          ]
+        },
+        {
+          title: '✨ CTF',
+          children: [
+            'wp1.md',   // 对应 docs/blog/wp1.md
+            'web入门.md'   // 对应 docs/blog/wp1.md
           ]
         }
         // 后续添加文章可继续扩展

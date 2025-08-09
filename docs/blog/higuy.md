@@ -1,6 +1,6 @@
 ---
-title: 嗨，朋友
-date: 2025-02-01
+title: 嗨第二了
+date: 2024-05-2
 categories:
   - 生活随笔
 tags:
