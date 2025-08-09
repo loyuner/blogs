@@ -1,10 +1,11 @@
 ---
-title: 搭建此blog的记录
-date: 2025-08-07
+title: 你好世界
+date: 2025-01-01
+categories:
+  - 学习笔记
 tags:
+  - 初学者
   - 日记
-  - VuePress
-summary: 这是我使用 VuePress 搭建博客的第一篇记录，分享搭建过程与心得。
 ---
 
 # 你好，世界！
@@ -49,7 +50,6 @@ summary: 这是我使用 VuePress 搭建博客的第一篇记录，分享搭建�
       npm install -D vuepress --registry https://registry.npmmirror.com
 
    4. 目录结构如下
-      ![](C:\Users\Administrator\my-blog\docs\image\PixPin_2025-08-07_22-54-08.png)
       可以用一下命令
 
       ```
