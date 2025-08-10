@@ -13,3 +13,5 @@ title: 所有文章
 - [信息收集](/blog/信息收集)
 - [web入门](/blog/web入门)
 - [小渗透](/blog/小渗透)
+- [工具](/blog/2)
+- [web入门2-php](/blog/web入门2)
