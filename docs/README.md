@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /hero.png
+heroImage: /
 heroText: 欢迎来到我的博客
 tagline: 记录学习与生活的点滴
 actionText: 查看文章 →

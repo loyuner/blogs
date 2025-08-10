@@ -15,3 +15,4 @@ title: 所有文章
 - [小渗透](/blog/小渗透.md)
 - [工具](/blog/2.md)
 - [web入门2-php](/blog/web入门2.md)
+- [CVE-2017-12615](/blog/CVE-2017-12615.md)

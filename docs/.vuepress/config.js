@@ -32,7 +32,8 @@ module.exports = {
           title: '✨ 渗透相关',
           children: [
             '信息收集.md',   // 对应 docs/blog/hello.md
-            '小渗透.md'   // 对应 docs/blog/hello.md
+            '小渗透.md',   // 对应 docs/blog/hello.md
+            'CVE-2017-12615.md'   // 对应 docs/blog/hello.md
           ]
         },
         {
@@ -51,7 +52,7 @@ module.exports = {
     // ✅ 重要：开启右侧文章目录（TOC）
     subSidebar: 'auto', // 显示当前文章的标题结构（h2/h3...）
 
-    sidebarDepth: 3, // 支持解析到 h3 标题
+    sidebarDepth: 5, // 支持解析到 h3 标题
 
     // 博客功能配置
     blogConfig: {
