@@ -31,7 +31,8 @@ module.exports = {
         {
           title: '✨ 渗透相关',
           children: [
-            '信息收集.md'   // 对应 docs/blog/hello.md
+            '信息收集.md',   // 对应 docs/blog/hello.md
+            '小渗透.md'   // 对应 docs/blog/hello.md
           ]
         },
         {

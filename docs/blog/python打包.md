@@ -12,7 +12,7 @@ tags:
 
 ## strat
 
-突发奇想想试试能不能把python打包成exe去装杯，但是网上都是cmd命令。想找ui界面的
+突发奇想想试试能不能把<mark>python</mark>打包成exe去装杯，但是网上都是cmd命令。想找ui界面的
 
 ### 装
 

@@ -12,3 +12,4 @@ title: 所有文章
 - [python打包](/blog/python打包)
 - [信息收集](/blog/信息收集)
 - [web入门](/blog/web入门)
+- [小渗透](/blog/小渗透)

@@ -164,8 +164,8 @@ tags:
       
       这里列出我所有的博客文章，点击左侧边栏或下方链接阅读：
       
-      - [我的第一篇文章](/posts/hello)
-      - [我的第二篇文章](/posts/second)
+      - [我的第一篇文章](/blog/hello)
+      - [我的第二篇文章](/blog/second)
       ```
    
    7. `package.json`这个很重要
