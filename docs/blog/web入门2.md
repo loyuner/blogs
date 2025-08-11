@@ -1,5 +1,5 @@
 ---
-title: web入门2-php
+title: web入门2-php1
 date: 2024-06-11
 categories:
   - 学习笔记
