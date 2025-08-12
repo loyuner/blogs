@@ -44,7 +44,7 @@ module.exports = {
             '2.md',   // 对应 docs/blog/wp1.md
             'web入门2.md',   // 对应 docs/blog/hello.md
             'web入门3.md',   // 对应 docs/blog/hello.md
-            'wp23.md'   // 对应 docs/blog/hello.md
+            'wp3.md'   // 对应 docs/blog/hello.md
           ]
         }
         // 后续添加文章可继续扩展
