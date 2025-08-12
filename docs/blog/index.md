@@ -17,3 +17,4 @@ title: 所有文章
 - [web入门2-php](/blog/web入门2.md)
 - [CVE-2017-12615](/blog/CVE-2017-12615.md)
 - [php2](/blog/web入门3.md)
+- [wp2](/blog/wp2.md)
